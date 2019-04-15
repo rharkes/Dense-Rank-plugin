@@ -1,0 +1,5 @@
+/doc/**
+/target/**
+/.idea/**
+/.settings/**
+/Tool_name.iml

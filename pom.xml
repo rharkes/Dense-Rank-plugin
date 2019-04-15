@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2019 R.Harkes NKI
+       This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+   
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+   
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>24.2.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>NKI</groupId>
+	<artifactId>RankImage</artifactId>
+	<version>1.0</version>
+
+	<name>RankImage</name>
+	<description>A Maven project implementing an ImageJ command.</description>
+	<url>http://www.nki.nl/bramvdbroek</url>
+	<inceptionYear>2019</inceptionYear>
+	<organization>
+		<name>The Netherlands Cancer Institute</name>
+		<url>http://ww.nki.nl</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<!-- See https://imagej.net/Team -->
+		<developer>
+			<id>bvandenbroek</id>
+			<name>Bram van den Broek</name>
+			<url>http://imagej.net/User:Rueden</url>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Rolf Harkes</name>
+			<url>http://github.com/rharkes</url>
+			<roles><role>founder</role></roles>
+			<properties><id>rharkes</id></properties>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>Image.sc Forum</name>
+			<archive>https://forum.image.sc/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:https://github.com/bvandenbroek/NEUBIAS</connection>
+		<developerConnection>scm:git:git@github.com:bvandenbroek/NEUBIAS</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/imagej/example-imagej-command</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/imagej/example-imagej-command/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>com.mycompany.imagej</package-name>
+		<main-class>nl.nki.imagej.Cell_counting_plugin</main-class>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>The Netherlands Cancer Institute</license.copyrightOwners>
+		<imagej.app.directory>C:/Fiji.App</imagej.app.directory>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+		</dependency>
+	</dependencies>
+</project>
